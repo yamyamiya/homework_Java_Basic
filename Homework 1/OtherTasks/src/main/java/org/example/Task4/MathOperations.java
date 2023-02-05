@@ -14,7 +14,7 @@ public class MathOperations {
         return resultOfMultiplication;
     }
     public double division(int a, int b) {
-        double resultOfDivision = (double) a / b;
+        double resultOfDivision = Math.round((double) a / b*100.0)/100.0;
         return resultOfDivision;
     }
 }

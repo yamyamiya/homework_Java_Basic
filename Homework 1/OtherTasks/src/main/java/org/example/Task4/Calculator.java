@@ -6,9 +6,9 @@ public class Calculator {
     public static void main(String[] args) {
         UserInput userInput = new UserInput();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter your first positive integer number:");
+        System.out.println("Please enter your first integer number:");
         int a = userInput.firstNumber = scanner.nextInt();
-        System.out.println("Please enter your second positive integer number:");
+        System.out.println("Please enter your second integer number:");
         int b = userInput.secondNumber = scanner.nextInt();
         MathOperations mathOperations = new MathOperations();
 
