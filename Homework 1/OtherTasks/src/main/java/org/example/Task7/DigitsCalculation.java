@@ -11,8 +11,7 @@ public class DigitsCalculation {
         System.out.println((number - hund*100)/10);
     }
     public void ones (int number){
-        int hund = number/100;
-        int tens = (number - hund*100)/10;
-        System.out.println(number -hund*100 - tens*10);
+        int tens = number/10;
+        System.out.println(number -tens*10);
     }
 }
