@@ -2,7 +2,7 @@ package Task4;
 
 public class hoursLeftDemo {
     public static void main(String[] args) {
-        int random = (int) (Math.random() * (28000 - 0 + 1) + 0);
+        int random = (int) (Math.random() * (28800 - 0 + 1) + 0);
         System.out.println(random);
 
         if (random < 3600) {
