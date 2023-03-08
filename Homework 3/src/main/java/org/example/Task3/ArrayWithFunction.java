@@ -87,13 +87,17 @@ public class ArrayWithFunction {
     }
     public static void functionForSequence8() {
         int[] array = new int[10];
-        array[0]=1;
-        for (int i = 1; i < array.length; i++) {
-            if ( i % 2 == 0 ) {
-                array[i] = array[i-2]+1;
-            } else {
-                array[i] = 0;
-            }
+//        array[0]=1;
+//        for (int i = 1; i < array.length; i++) {
+//            if ( i % 2 == 0 ) {
+//                array[i] = array[i-2]+1;
+//            } else {
+//                array[i] = 0;
+//            }
+//        }
+
+        for (int i = 0; i < array.length; i+=2) {
+            array[i] = i/2+1;
         }
         System.out.println("8 sequence: "+Arrays.toString(array));
     }

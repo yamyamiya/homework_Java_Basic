@@ -13,11 +13,10 @@ public class BankTerminalDemo {
             if (moneyOnAccount % divider != 0) {
                 divider--;
             } else {
+                System.out.println(moneyOnAccount + " " + divider+ " " + daysCounter);
                 moneyOnAccount = moneyOnAccount - divider;
                 daysCounter++;
-                if (divider == 1 && moneyOnAccount > 1 || divider == moneyOnAccount) {
-                    divider = moneyOnAccount / 2;
-                }
+                divider = moneyOnAccount / 2;
             }
         }
         if (moneyOnAccount == 1) {

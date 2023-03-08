@@ -30,8 +30,16 @@ public class LiftDemo {
         int floorNumber = 0;
         int numberOfLifts = 0;
         while (floorNumber <= floor) {
-            floorNumber = floorNumber + (stepUp - stepDown);
-            numberOfLifts++;
+            if(floorNumber+ stepUp<= floor) {
+                floorNumber = floorNumber + (stepUp - stepDown);
+                numberOfLifts++;
+            }
+            else{
+                numberOfLifts++;
+                floorNumber = floorNumber+stepUp;
+            }
+//            floorNumber = floorNumber + (stepUp - stepDown);
+//            numberOfLifts++;
         }
         System.out.println("To get on the top of the building you will need " + numberOfLifts + " lifts.");
 
